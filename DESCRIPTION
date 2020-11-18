@@ -1,15 +1,14 @@
 Package: gc.content
-Title: What the Package Does (One Line, Title Case)
+Title: Counts the Combined Number of Guanine and Cytosine Bases Present in a Sequence and Returns the Percent of Guanine and Cytosine in the Sequence
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Tessa",
+           family = "Morin",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
+           email = "tessiemn@student.ubc.ca",
            comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to
-    pick a license
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
