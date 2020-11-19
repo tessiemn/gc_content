@@ -1,0 +1,70 @@
+---
+title: "gc_content_vignette"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{gc_content_vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(gc.content)
+```
+
+This package only contains the function ```gc_content()```, which will give you the percentage of guanine and cytosine bases in a nucleotide sequence. 
+
+## Sequence containing guanine and cytosine
+
+This function can determine the guanine and cytosine percentage of a sequence with both guanine and cytosine present:
+
+```{r}
+
+gc_content("ATCG")
+
+```
+
+## Sequence containing only guanine
+
+```gc_content``` can also give the percentage of only guanines in the sequence:
+
+```{r}
+
+gc_content("ATG")
+
+```
+
+## Sequence containing only cytosine
+
+```gc_content``` can also give the percentage of only cytosines in the sequence:
+
+```{r}
+
+gc_content("ATC")
+
+```
+
+## Sequence containing neither guanine nor cytosine
+
+Sequences that do not contain guanine or cytosine will result in a warning, as a nucleotide sequence without guanine or cytosine is generally unwanted:
+
+```{r}
+
+gc_content("AATT")
+
+```
+
+## Sequence containing nothing
+
+Inputs that are empty strings will result in an error, as the function cannot calculate anything.
+
+
+## Numeric inputs
+
+This function only accepts strings of characters as inputs, and so inputs that are numeric will result in an error.

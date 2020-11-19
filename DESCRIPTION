@@ -17,4 +17,7 @@ Imports:
     stringr,
     magrittr
 Suggests: 
-    testthat
+    testthat,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
